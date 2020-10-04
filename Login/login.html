@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Login</title>
+    <title>Đăng Nhập</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--===============================================================================================-->
@@ -27,43 +27,48 @@
     <link rel="stylesheet" type="text/css" href="css/util.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/forgotpassword.css">
 </head>
 
 <body>
 
     <div class="limiter">
-        <div class="container-login100" style="background-image: url('images/bg-01.jpg');">
+        <div class="container-login100" style="background-image: url('images/maudo.jpg');">
             <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
                 <form class="login100-form validate-form">
-                    <span class="login100-form-title p-b-49">
-						Login
+                    <img src="../HEADER/logo.jpg" class="logo" style="margin-left: 80px;" />
+                    <span class="login100-form-title ">
+						Đăng Nhập
 					</span>
 
-                    <div class="wrap-input100 validate-input m-b-23" data-validate="Type is your email youremail@dtu.edu.vn">
+                    <div class="wrap-input100 validate-input m-b-23" data-validate="yêu cầu email @dtu.edu.vn">
                         <span class="label-input100">Email</span>
-                        <input class="input100" type="text" name="useremail" placeholder="Type your email">
+                        <input class="input100" type="text" name="useremail" placeholder="Nhập Email của bạn">
                         <span class="focus-input100" data-symbol="&#xf206;"></span>
                     </div>
 
-                    <div class="wrap-input100 validate-input" data-validate="Password is required">
-                        <span class="label-input100">Password</span>
-                        <input class="input100" type="password" name="pass" placeholder="Type your password">
+                    <div class="wrap-input100 validate-input" data-validate="bạn chưa nhập mật khẩu">
+                        <span class="label-input100">Mật Khẩu</span>
+                        <input class="input100" type="password" name="pass" placeholder="Nhập mật khẩu">
                         <span class="focus-input100" data-symbol="&#xf190;"></span>
                     </div>
-
-                    <div class="text-right p-t-8 p-b-31">
-                        <a href="#">
-							Forgot password?
+                        <br>
+                    <div >
+                        <a href="./forgotpassword.html" class="text-right">
+							Quên Mật Khẩu ?
 						</a>
                     </div>
 
-                    <div class="container-login100-form-btn">
-                        <div class="wrap-login100-form-btn">
-                            <div class="login100-form-bgbtn"></div>
-                            <button class="login100-form-btn">
-								Login
+                    <div style="text-align: center;">
+                        
+                            <button  class="button">
+								Đăng Nhập
 							</button>
-                        </div>
+                        
+                    </div>
+                    <div style="margin-top: 15px;">
+                        <input type="checkbox">
+                        Nhớ Mật Khẩu
                     </div>
 
                     <!-- <div class="txt1 text-center p-t-54 p-b-20">
@@ -78,13 +83,9 @@
 						</a>
 					</div> -->
 
-                    <div class="flex-col-c p-t-155">
-                        <span class="txt1 p-b-17">
-							Or Register Using
-						</span>
-
-                        <a href="#" class="txt2">
-							Register
+                    <div>
+                        <a href="./register.html" style="text-align: center;" style="font-weight: bold;" class="text-right" >
+							Đăng Ký
 						</a>
                     </div>
                 </form>
